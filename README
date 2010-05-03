@@ -1,0 +1,47 @@
+FlexGen Examples used at Code Generation 2009
+==========================================
+
+Install Ruby
+------------
+
+http://ruby-lang.org
+
+Currently Ruby 1.9.x is not supported, use 1.8.x instead.
+
+
+Install FlexGen
+------------
+
+> gem install flexgen-0.5.0.gem
+
+
+Run the examples
+----------------
+
+1. Ruby Metamodel Representation to UML Class
+
+> uml_class/statemachine_mm_to_ea.rb
+
+This takes the metamodel defined in metamodel/statemachine_metamodel.rb and 
+turns it into uml_class/generated/statemachine_metamodel_import.xml
+(If the regenerated metamodel already exists, see below, this is taken as input)
+You can import this into Enterprise Architect and drag the model elements to a diagram.
+When you regenerate the xml file and reimport it, the layout should be preserved.
+(Diagram element IDs are stored in statemachine_metamodel_import.xml.ids)
+
+
+2. UML Class to Ruby Metamodel Representation
+
+Export the UML Class root package to uml_class/statemachine_metamodel_export.xml
+
+> uml_class/ea_to_statemachine_mm.rb
+
+This takes the exported file and turns it into uml_class/statemachine_metamodel_regenerated.rb
+
+
+3. Statemachine Code Generator
+
+> code_generator/statemachine_generator.rb
+
+This takes the model defined in model/example_machine_dsl.rb and generates
+an output file into code_generator/generated/

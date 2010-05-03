@@ -1,0 +1,808 @@
+<XMI timestamp="Tue Jun 09 00:06:41 +0200 2009" xmlns:UML="omg.org/UML1.3" xmi.version="1.1">
+  <XMI.header >
+    <XMI.documentation >
+      <XMI.exporter >Enterprise Architect</XMI.exporter>
+      <XMI.exporterVersion >2.5</XMI.exporterVersion>
+    </XMI.documentation>
+  </XMI.header>
+  <XMI.content >
+    <UML:Model visibility="public" name="EA Model" xmi.id="EAPK_28325960">
+      <UML:Namespace.ownedElement >
+        <UML:Class visibility="public" name="EARootClass" isLeaf="false" isAbstract="false" isRoot="true" xmi.id="EAID_28319290">
+          <UML:ModelElement.taggedValue >
+            <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28296200"/>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Package visibility="public" name="Views" isLeaf="false" isAbstract="false" isRoot="true" xmi.id="EAPK_28328610">
+          <UML:Namespace.ownedElement >
+            <UML:Collaboration visibility="public" name="Collaborations" xmi.id="28323300">
+              <UML:Namespace.ownedElement >
+                <UML:ClassifierRole visibility="public" name="HouseMetamodel" base="EAID_28319290" xmi.id="28311780">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28288890"/>
+                    <UML:TaggedValue tag="ea_stype" value="Package" xmi.id="28288850"/>
+                    <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28288810"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28288770"/>
+                    <UML:TaggedValue tag="package" value="EAPK_B216CC15_6D9C_4c10_9015_96740F924D1C" xmi.id="28288730"/>
+                    <UML:TaggedValue tag="date_created" value="2006-06-26 08:41:49" xmi.id="28288690"/>
+                    <UML:TaggedValue tag="date_modified" value="2006-06-26 08:41:49" xmi.id="28288650"/>
+                    <UML:TaggedValue tag="gentype" value="Java" xmi.id="28288610"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28288570"/>
+                    <UML:TaggedValue tag="package2" value="EAID_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28288530"/>
+                    <UML:TaggedValue tag="package_name" value="Views" xmi.id="28288490"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28288450"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28288410"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28288370"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28288330"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:ClassifierRole>
+                <UML:ClassifierRole visibility="public" name="HouseExampleModel" base="EAID_28319290" xmi.id="28311700">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28285580"/>
+                    <UML:TaggedValue tag="ea_stype" value="Package" xmi.id="28285540"/>
+                    <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28285500"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28285460"/>
+                    <UML:TaggedValue tag="package" value="EAPK_B216CC15_6D9C_4c10_9015_96740F924D1C" xmi.id="28285420"/>
+                    <UML:TaggedValue tag="date_created" value="2006-07-20 18:34:43" xmi.id="28285380"/>
+                    <UML:TaggedValue tag="date_modified" value="2006-07-20 18:34:43" xmi.id="28285340"/>
+                    <UML:TaggedValue tag="gentype" value="Java" xmi.id="28285300"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28285260"/>
+                    <UML:TaggedValue tag="package2" value="EAID_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28285220"/>
+                    <UML:TaggedValue tag="package_name" value="Views" xmi.id="28285180"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28285140"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28285100"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28285060"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28285020"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:ClassifierRole>
+              </UML:Namespace.ownedElement>
+            </UML:Collaboration>
+            <UML:Package visibility="public" name="HouseMetamodel" isLeaf="false" isAbstract="false" isRoot="true" xmi.id="EAPK_28323090">
+              <UML:Namespace.ownedElement >
+                <UML:Class stereotype="28276690" visibility="public" name="House" isLeaf="false" isAbstract="false" isRoot="false" isActive="false" presentation="28275720" xmi.id="EAID_28307510">
+                  <UML:Classifier.feature >
+                    <UML:Attribute visibility="private" name="address" targetScope="instance" type="28319110" changeability="changeable" ownerScope="instance" xmi.id="28277860">
+                      <UML:Attribute.initialValue >
+                        <UML:Expression xmi.id="28194340"/>
+                      </UML:Attribute.initialValue>
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="type" value="String" xmi.id="28193560"/>
+                        <UML:TaggedValue tag="derived" value="0" xmi.id="28193520"/>
+                        <UML:TaggedValue tag="containment" value="Not Specified" xmi.id="28193480"/>
+                        <UML:TaggedValue tag="ordered" value="0" xmi.id="28193430"/>
+                        <UML:TaggedValue tag="collection" value="false" xmi.id="28193390"/>
+                        <UML:TaggedValue tag="position" value="0" xmi.id="28193350"/>
+                        <UML:TaggedValue tag="lowerBound" value="1" xmi.id="28193300"/>
+                        <UML:TaggedValue tag="upperBound" value="1" xmi.id="28193260"/>
+                        <UML:TaggedValue tag="duplicates" value="0" xmi.id="28193220"/>
+                        <UML:TaggedValue tag="ea_guid" value="{A8DF581B-9AC6-4f75-AB48-8FAEDFC6E068}" xmi.id="28193180"/>
+                        <UML:TaggedValue tag="styleex" value="volatile=0;" xmi.id="28193140"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:Attribute>
+                  </UML:Classifier.feature>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28275040"/>
+                    <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28275000"/>
+                    <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28274960"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28274920"/>
+                    <UML:TaggedValue tag="package" value="EAPK_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28274880"/>
+                    <UML:TaggedValue tag="date_created" value="2005-09-16 19:52:18" xmi.id="28274840"/>
+                    <UML:TaggedValue tag="date_modified" value="2006-02-28 08:29:19" xmi.id="28274800"/>
+                    <UML:TaggedValue tag="gentype" value="Java" xmi.id="28274760"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28274720"/>
+                    <UML:TaggedValue tag="package_name" value="HouseMetamodel" xmi.id="28274680"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28274640"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28274600"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28274560"/>
+                    <UML:TaggedValue tag="stereotype" value="dummy" xmi.id="28274520"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28274480"/>
+                    <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28274230"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Class>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28271690 28271650" xmi.id="EAID_28307470">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" aggregation="none" changeable="none" targetScope="instance" type="EAID_28307510" isOrdered="false" isNavigable="false" xmi.id="EAID_28278810">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28202070"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" name="bathroom" multiplicity="1" aggregation="none" changeable="none" targetScope="instance" type="EAID_28236360" isOrdered="false" isNavigable="true" xmi.id="EAID_28271980">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28183200"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28271530"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28271490"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28271450"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28271410"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28271370"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28271330"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28271290"/>
+                    <UML:TaggedValue tag="privatedata5" value="SX=8;SY=5;EX=8;EY=5;" xmi.id="28271250"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28271210"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28270870"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28270700"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28268390 28268350" xmi.id="EAID_28307410">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" name="kitchen" multiplicity="1" aggregation="none" changeable="none" targetScope="instance" type="EAID_28245720" isOrdered="false" isNavigable="true" xmi.id="EAID_28268680">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28176560"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" name="house" multiplicity="1" aggregation="none" changeable="none" targetScope="instance" type="EAID_28307510" isOrdered="false" isNavigable="true" xmi.id="EAID_28278750">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28200040"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28268240"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28268200"/>
+                    <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="28268160"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28268120"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28268080"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28268040"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28268000"/>
+                    <UML:TaggedValue tag="privatedata5" value="SX=6;SY=-12;EX=-44;EY=-9;EDGE=1;" xmi.id="28267960"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28267920"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28267570"/>
+                    <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="28267400"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28265090 28265050" xmi.id="EAID_28305980">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" aggregation="none" changeable="none" targetScope="instance" type="EAID_28305860" isOrdered="false" isNavigable="false" xmi.id="EAID_28265380">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28170240"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" name="home" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_28307510" isOrdered="false" isNavigable="true" xmi.id="EAID_28277980">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28197990"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28264940"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28264900"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28264860"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28264820"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28264780"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28264740"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28264700"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28264660"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28264320"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28264160"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28261830 28261790" xmi.id="EAID_28305940">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" name="room" multiplicity="1..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_28236480" isOrdered="false" isNavigable="false" xmi.id="EAID_28262130">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28164200"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" name="house" multiplicity="1" aggregation="composite" changeable="none" targetScope="instance" type="EAID_28307510" isOrdered="false" isNavigable="true" xmi.id="EAID_28277940">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28195900"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28261680"/>
+                    <UML:TaggedValue tag="ea_type" value="Aggregation" xmi.id="28261640"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28261600"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28261560"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28261520"/>
+                    <UML:TaggedValue tag="subtype" value="Strong" xmi.id="28261480"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28261440"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28261390"/>
+                    <UML:TaggedValue tag="privatedata5" value="SX=-2;SY=-1;EX=-2;EY=-1;" xmi.id="28261350"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28261310"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28260950"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28260790"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Collaboration visibility="public" name="Collaborations" xmi.id="28305900">
+                  <UML:Namespace.ownedElement >
+                    <UML:ClassifierRole visibility="public" name="Rooms" base="EAID_28319290" xmi.id="28258180">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28156930"/>
+                        <UML:TaggedValue tag="ea_stype" value="Package" xmi.id="28156890"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28156850"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28156800"/>
+                        <UML:TaggedValue tag="package" value="EAPK_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28156760"/>
+                        <UML:TaggedValue tag="date_created" value="2006-06-23 08:28:49" xmi.id="28156720"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-06-23 08:28:49" xmi.id="28156670"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28156630"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28156590"/>
+                        <UML:TaggedValue tag="package2" value="EAID_F9D8C6E3_4DAD_4aa2_AD47_D0ABA4E93E08" xmi.id="28156550"/>
+                        <UML:TaggedValue tag="package_name" value="HouseMetamodel" xmi.id="28156510"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28156470"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28156420"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28156380"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28156340"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                  </UML:Namespace.ownedElement>
+                </UML:Collaboration>
+                <UML:Class visibility="public" name="Person" isLeaf="false" isAbstract="false" isRoot="false" isActive="false" presentation="28255840" xmi.id="EAID_28305860">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28255720"/>
+                    <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28255680"/>
+                    <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28255640"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28255600"/>
+                    <UML:TaggedValue tag="package" value="EAPK_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28255560"/>
+                    <UML:TaggedValue tag="date_created" value="2006-06-27 08:34:23" xmi.id="28255520"/>
+                    <UML:TaggedValue tag="date_modified" value="2006-06-27 08:34:26" xmi.id="28255480"/>
+                    <UML:TaggedValue tag="gentype" value="Java" xmi.id="28255440"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28255390"/>
+                    <UML:TaggedValue tag="package_name" value="HouseMetamodel" xmi.id="28255350"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28255310"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28255270"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28255220"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28255180"/>
+                    <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28254920"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Class>
+                <UML:Comment visibility="public" presentation="28252910" xmi.id="28305820">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28252800"/>
+                    <UML:TaggedValue tag="ea_stype" value="Note" xmi.id="28252760"/>
+                    <UML:TaggedValue tag="ea_ntype" value="1" xmi.id="28252720"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28252680"/>
+                    <UML:TaggedValue tag="package" value="EAPK_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28252640"/>
+                    <UML:TaggedValue tag="date_created" value="2006-07-07 08:08:53" xmi.id="28252600"/>
+                    <UML:TaggedValue tag="date_modified" value="2006-07-07 08:09:48" xmi.id="28252560"/>
+                    <UML:TaggedValue tag="gentype" value="none" xmi.id="28252520"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28252480"/>
+                    <UML:TaggedValue tag="package_name" value="HouseMetamodel" xmi.id="28252440"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28252400"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28252360"/>
+                    <UML:TaggedValue tag="documentation" value="this aggregation is navigable from room to house (EA does not show it)" xmi.id="28252320"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28252280"/>
+                    <UML:TaggedValue tag="relatedlinks" value="idref1=EAID_F15A2B25_0DA9_4203_8FC9_25645610B5E5;" xmi.id="28252240"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28252200"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Comment>
+                <UML:Class visibility="public" name="MeetingPlace" isLeaf="false" isAbstract="false" isRoot="false" isActive="false" presentation="28249870" xmi.id="EAID_28305640">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28249750"/>
+                    <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28249710"/>
+                    <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28249670"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28249630"/>
+                    <UML:TaggedValue tag="package" value="EAPK_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28249590"/>
+                    <UML:TaggedValue tag="date_created" value="2006-07-12 08:40:46" xmi.id="28249550"/>
+                    <UML:TaggedValue tag="date_modified" value="2007-06-14 08:22:21" xmi.id="28249510"/>
+                    <UML:TaggedValue tag="gentype" value="Java" xmi.id="28249470"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28249430"/>
+                    <UML:TaggedValue tag="package_name" value="HouseMetamodel" xmi.id="28249380"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28249340"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28249300"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28249250"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28249210"/>
+                    <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28248950"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Class>
+                <UML:Generalization visibility="public" presentation="28246810 28246760" subtype="EAID_28245720" supertype="EAID_28305640" xmi.id="EAID_28305190">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28246650"/>
+                    <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="28246610"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28246570"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28246530"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28246490"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28246450"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28246410"/>
+                    <UML:TaggedValue tag="src_visibility" value="Public" xmi.id="28246360"/>
+                    <UML:TaggedValue tag="src_isOrdered" value="false" xmi.id="28246320"/>
+                    <UML:TaggedValue tag="src_isNavigable" value="false" xmi.id="28246280"/>
+                    <UML:TaggedValue tag="dst_visibility" value="Public" xmi.id="28246230"/>
+                    <UML:TaggedValue tag="dst_isOrdered" value="false" xmi.id="28246190"/>
+                    <UML:TaggedValue tag="dst_isNavigable" value="true" xmi.id="28246150"/>
+                    <UML:TaggedValue tag="$ea_xref_property" value="$SUP;$ENDXREF;" xmi.id="28246110"/>
+                    <UML:TaggedValue tag="privatedata5" value="SX=-24;SY=-16;" xmi.id="28246070"/>
+                    <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="28245840"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Generalization>
+                <UML:Interface stereotype="28243520" visibility="public" name="CookingPlace" supplierDependency="28304110" isLeaf="false" isAbstract="true" isRoot="false" presentation="28243320" xmi.id="28305030">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28243190"/>
+                    <UML:TaggedValue tag="ea_stype" value="Interface" xmi.id="28243150"/>
+                    <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28243110"/>
+                    <UML:TaggedValue tag="version" value="1.0" xmi.id="28243070"/>
+                    <UML:TaggedValue tag="package" value="EAPK_A1B83D59_CAE1_422c_BA5F_D3624D7156AD" xmi.id="28243020"/>
+                    <UML:TaggedValue tag="date_created" value="2007-06-14 08:22:21" xmi.id="28242980"/>
+                    <UML:TaggedValue tag="date_modified" value="2007-06-14 08:23:36" xmi.id="28242940"/>
+                    <UML:TaggedValue tag="gentype" value="Java" xmi.id="28242900"/>
+                    <UML:TaggedValue tag="tagged" value="0" xmi.id="28242860"/>
+                    <UML:TaggedValue tag="package_name" value="HouseMetamodel" xmi.id="28242820"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28242780"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28242740"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28242700"/>
+                    <UML:TaggedValue tag="stereotype" value="interface" xmi.id="28242660"/>
+                    <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28242610"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Interface>
+                <UML:Dependency stereotype="28240530" visibility="public" supplier="28305030" client="EAID_28245720" presentation="28240340 28240300" xmi.id="28304110">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28240190"/>
+                    <UML:TaggedValue tag="ea_type" value="Dependency" xmi.id="28240150"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28240110"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28240070"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28240020"/>
+                    <UML:TaggedValue tag="stereotype" value="implements" xmi.id="28239980"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28239940"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28239900"/>
+                    <UML:TaggedValue tag="conditional" value="«implements»" xmi.id="28239860"/>
+                    <UML:TaggedValue tag="src_visibility" value="Public" xmi.id="28239820"/>
+                    <UML:TaggedValue tag="src_aggregation" value="0" xmi.id="28239780"/>
+                    <UML:TaggedValue tag="src_isOrdered" value="false" xmi.id="28239740"/>
+                    <UML:TaggedValue tag="src_isNavigable" value="false" xmi.id="28239700"/>
+                    <UML:TaggedValue tag="src_containment" value="Unspecified" xmi.id="28239660"/>
+                    <UML:TaggedValue tag="dst_visibility" value="Public" xmi.id="28239620"/>
+                    <UML:TaggedValue tag="dst_aggregation" value="0" xmi.id="28239580"/>
+                    <UML:TaggedValue tag="dst_isOrdered" value="false" xmi.id="28239540"/>
+                    <UML:TaggedValue tag="dst_isNavigable" value="true" xmi.id="28239500"/>
+                    <UML:TaggedValue tag="dst_containment" value="Unspecified" xmi.id="28239460"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28239420"/>
+                    <UML:TaggedValue tag="mb" value="«implements»" xmi.id="28239380"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Dependency>
+                <UML:Package visibility="public" name="Rooms" isLeaf="false" isAbstract="false" isRoot="true" xmi.id="EAPK_28302680">
+                  <UML:Namespace.ownedElement >
+                    <UML:Class visibility="public" name="Room" isLeaf="false" isAbstract="false" isRoot="false" isActive="false" presentation="28103500" xmi.id="EAID_28236480">
+                      <UML:Classifier.feature >
+                        <UML:Operation visibility="public" name="enter" isQuery="false" concurrency="sequential" ownerScope="instance" xmi.id="28104840">
+                          <UML:BehavioralFeature.parameter >
+                            <UML:Parameter visibility="public" kind="return" type="28317530" xmi.id="28012900">
+                              <UML:Parameter.defaultValue >
+                                <UML:Expression xmi.id="27934680"/>
+                              </UML:Parameter.defaultValue>
+                              <UML:ModelElement.taggedValue >
+                                <UML:TaggedValue tag="pos" value="0" xmi.id="27934220"/>
+                                <UML:TaggedValue tag="type" value="void" xmi.id="27934180"/>
+                                <UML:TaggedValue tag="const" value="0" xmi.id="27934140"/>
+                                <UML:TaggedValue tag="ea_guid" value="{A8C01177-4523-44c4-87F7-F2B8F9F3C915}" xmi.id="27934100"/>
+                              </UML:ModelElement.taggedValue>
+                            </UML:Parameter>
+                          </UML:BehavioralFeature.parameter>
+                          <UML:ModelElement.taggedValue >
+                            <UML:TaggedValue tag="type" value="void" xmi.id="28011960"/>
+                            <UML:TaggedValue tag="const" value="false" xmi.id="28011920"/>
+                            <UML:TaggedValue tag="synchronised" value="0" xmi.id="28011870"/>
+                            <UML:TaggedValue tag="concurrency" value="Sequential" xmi.id="28011830"/>
+                            <UML:TaggedValue tag="position" value="0" xmi.id="28011790"/>
+                            <UML:TaggedValue tag="returnarray" value="0" xmi.id="28011750"/>
+                            <UML:TaggedValue tag="pure" value="0" xmi.id="28011710"/>
+                            <UML:TaggedValue tag="ea_guid" value="{A8C01177-4523-44c4-87F7-F2B8F9F3C915}" xmi.id="28011670"/>
+                          </UML:ModelElement.taggedValue>
+                        </UML:Operation>
+                      </UML:Classifier.feature>
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28103390"/>
+                        <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28103340"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28103300"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28103260"/>
+                        <UML:TaggedValue tag="package" value="EAPK_F9D8C6E3_4DAD_4aa2_AD47_D0ABA4E93E08" xmi.id="28103220"/>
+                        <UML:TaggedValue tag="date_created" value="2005-09-16 19:52:28" xmi.id="28103180"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-06-22 21:15:25" xmi.id="28103130"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28103090"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28103040"/>
+                        <UML:TaggedValue tag="package_name" value="Rooms" xmi.id="28103000"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28102960"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28102920"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28102880"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28102840"/>
+                        <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28102590"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:Class>
+                    <UML:Generalization visibility="public" presentation="28100450 28100410" subtype="EAID_28236360" supertype="EAID_28236480" xmi.id="EAID_28236440">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="style" value="3" xmi.id="28100300"/>
+                        <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="28100260"/>
+                        <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28100220"/>
+                        <UML:TaggedValue tag="linemode" value="3" xmi.id="28100180"/>
+                        <UML:TaggedValue tag="seqno" value="0" xmi.id="28100140"/>
+                        <UML:TaggedValue tag="headStyle" value="0" xmi.id="28100100"/>
+                        <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28100060"/>
+                        <UML:TaggedValue tag="src_visibility" value="Public" xmi.id="28100020"/>
+                        <UML:TaggedValue tag="src_isOrdered" value="false" xmi.id="28099980"/>
+                        <UML:TaggedValue tag="src_isNavigable" value="false" xmi.id="28099940"/>
+                        <UML:TaggedValue tag="dst_visibility" value="Public" xmi.id="28099900"/>
+                        <UML:TaggedValue tag="dst_isOrdered" value="false" xmi.id="28099860"/>
+                        <UML:TaggedValue tag="dst_isNavigable" value="true" xmi.id="28099820"/>
+                        <UML:TaggedValue tag="$ea_xref_property" value="$SUP;$ENDXREF;" xmi.id="28099780"/>
+                        <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="28099560"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:Generalization>
+                    <UML:Generalization visibility="public" presentation="28097760 28097720" subtype="EAID_28245720" supertype="EAID_28236480" xmi.id="EAID_28236400">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="style" value="3" xmi.id="28097600"/>
+                        <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="28097560"/>
+                        <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28097520"/>
+                        <UML:TaggedValue tag="linemode" value="3" xmi.id="28097480"/>
+                        <UML:TaggedValue tag="seqno" value="0" xmi.id="28097440"/>
+                        <UML:TaggedValue tag="headStyle" value="0" xmi.id="28097390"/>
+                        <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28097350"/>
+                        <UML:TaggedValue tag="src_visibility" value="Public" xmi.id="28097310"/>
+                        <UML:TaggedValue tag="src_isOrdered" value="false" xmi.id="28097270"/>
+                        <UML:TaggedValue tag="src_isNavigable" value="false" xmi.id="28097230"/>
+                        <UML:TaggedValue tag="dst_visibility" value="Public" xmi.id="28097190"/>
+                        <UML:TaggedValue tag="dst_isOrdered" value="false" xmi.id="28097150"/>
+                        <UML:TaggedValue tag="dst_isNavigable" value="true" xmi.id="28097110"/>
+                        <UML:TaggedValue tag="$ea_xref_property" value="$SUP;$ENDXREF;" xmi.id="28097070"/>
+                        <UML:TaggedValue tag="privatedata5" value="EX=37;EY=3;" xmi.id="28097030"/>
+                        <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="28096810"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:Generalization>
+                    <UML:Class clientDependency="28304110" visibility="public" name="Kitchen" isLeaf="false" isAbstract="false" isRoot="false" isActive="false" presentation="28130020" xmi.id="EAID_28245720">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28129910"/>
+                        <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28129870"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28129830"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28129790"/>
+                        <UML:TaggedValue tag="package" value="EAPK_F9D8C6E3_4DAD_4aa2_AD47_D0ABA4E93E08" xmi.id="28129750"/>
+                        <UML:TaggedValue tag="date_created" value="2005-11-30 19:26:13" xmi.id="28129710"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-06-22 21:15:34" xmi.id="28129670"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28129620"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28129580"/>
+                        <UML:TaggedValue tag="package_name" value="Rooms" xmi.id="28129540"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28129500"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28129460"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28129420"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28129380"/>
+                        <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28129120"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:Class>
+                    <UML:Class visibility="public" name="Bathroom" isLeaf="false" isAbstract="false" isRoot="false" isActive="false" presentation="28094460" xmi.id="EAID_28236360">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28094340"/>
+                        <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28094300"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28094260"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28094220"/>
+                        <UML:TaggedValue tag="package" value="EAPK_F9D8C6E3_4DAD_4aa2_AD47_D0ABA4E93E08" xmi.id="28094180"/>
+                        <UML:TaggedValue tag="date_created" value="2006-06-27 08:32:25" xmi.id="28094140"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-06-27 08:34:23" xmi.id="28094100"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28094060"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28094010"/>
+                        <UML:TaggedValue tag="package_name" value="Rooms" xmi.id="28093970"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28093930"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28093890"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28093850"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28093800"/>
+                        <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="28093550"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:Class>
+                  </UML:Namespace.ownedElement>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="created" value="2006-06-23 00:00:00" xmi.id="28237040"/>
+                    <UML:TaggedValue tag="modified" value="2006-06-23 00:00:00" xmi.id="28237000"/>
+                    <UML:TaggedValue tag="iscontrolled" value="FALSE" xmi.id="28236960"/>
+                    <UML:TaggedValue tag="isprotected" value="FALSE" xmi.id="28236920"/>
+                    <UML:TaggedValue tag="usedtd" value="FALSE" xmi.id="28236880"/>
+                    <UML:TaggedValue tag="logxml" value="FALSE" xmi.id="28236840"/>
+                    <UML:TaggedValue tag="phase" value="1.0" xmi.id="28236800"/>
+                    <UML:TaggedValue tag="status" value="Proposed" xmi.id="28236760"/>
+                    <UML:TaggedValue tag="complexity" value="1" xmi.id="28236720"/>
+                    <UML:TaggedValue tag="ea_stype" value="Public" xmi.id="28236680"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Package>
+              </UML:Namespace.ownedElement>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="created" value="2006-06-26 00:00:00" xmi.id="28308110"/>
+                <UML:TaggedValue tag="modified" value="2006-06-26 00:00:00" xmi.id="28308070"/>
+                <UML:TaggedValue tag="iscontrolled" value="FALSE" xmi.id="28308030"/>
+                <UML:TaggedValue tag="isprotected" value="FALSE" xmi.id="28307990"/>
+                <UML:TaggedValue tag="usedtd" value="FALSE" xmi.id="28307950"/>
+                <UML:TaggedValue tag="logxml" value="FALSE" xmi.id="28307910"/>
+                <UML:TaggedValue tag="ea_package_id" value="44" xmi.id="28307870"/>
+                <UML:TaggedValue tag="phase" value="1.0" xmi.id="28307830"/>
+                <UML:TaggedValue tag="status" value="Proposed" xmi.id="28307790"/>
+                <UML:TaggedValue tag="complexity" value="1" xmi.id="28307750"/>
+                <UML:TaggedValue tag="ea_stype" value="Public" xmi.id="28307710"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Package>
+            <UML:Package visibility="public" name="HouseExampleModel" isLeaf="false" isAbstract="false" isRoot="true" xmi.id="EAPK_28321900">
+              <UML:Namespace.ownedElement >
+                <UML:Collaboration visibility="public" name="Collaborations" xmi.id="28299010">
+                  <UML:Namespace.ownedElement >
+                    <UML:ClassifierRole visibility="public" name="SomeonesHouse" presentation="28089780" base="EAID_28319290" xmi.id="28230060">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28089670"/>
+                        <UML:TaggedValue tag="ea_stype" value="Object" xmi.id="28089630"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28089590"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28089550"/>
+                        <UML:TaggedValue tag="classifier" value="EAID_436D81AD_A9B0_44d8_8AD1_86BB0808DA32" xmi.id="28089510"/>
+                        <UML:TaggedValue tag="package" value="EAPK_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28089470"/>
+                        <UML:TaggedValue tag="classname" value="House" xmi.id="28089430"/>
+                        <UML:TaggedValue tag="date_created" value="2006-07-20 18:35:22" xmi.id="28089390"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-07-21 19:34:53" xmi.id="28089350"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28089310"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28089270"/>
+                        <UML:TaggedValue tag="package_name" value="HouseExampleModel" xmi.id="28089230"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28089190"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28089140"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28089100"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28089060"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                    <UML:AssociationRole visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28086270 28086230" xmi.id="EAID_28230020">
+                      <UML:Association.connection >
+                        <UML:AssociationEndRole visibility="public" aggregation="none" changeable="none" targetScope="instance" type="28228240" isOrdered="false" isNavigable="true" xmi.id="EAID_28086670">
+                          <UML:ModelElement.taggedValue >
+                            <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="27977040"/>
+                          </UML:ModelElement.taggedValue>
+                        </UML:AssociationEndRole>
+                        <UML:AssociationEndRole visibility="public" name="home" aggregation="none" changeable="none" targetScope="instance" type="28230060" isOrdered="false" isNavigable="true" xmi.id="EAID_28091100">
+                          <UML:ModelElement.taggedValue >
+                            <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="27985560"/>
+                          </UML:ModelElement.taggedValue>
+                        </UML:AssociationEndRole>
+                      </UML:Association.connection>
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="style" value="3" xmi.id="28086120"/>
+                        <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28086080"/>
+                        <UML:TaggedValue tag="direction" value="Unspecified" xmi.id="28086040"/>
+                        <UML:TaggedValue tag="linemode" value="3" xmi.id="28086000"/>
+                        <UML:TaggedValue tag="seqno" value="0" xmi.id="28085960"/>
+                        <UML:TaggedValue tag="headStyle" value="0" xmi.id="28085920"/>
+                        <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28085880"/>
+                        <UML:TaggedValue tag="src_visibility" value="Public" xmi.id="28085840"/>
+                        <UML:TaggedValue tag="src_aggregation" value="0" xmi.id="28085800"/>
+                        <UML:TaggedValue tag="src_isOrdered" value="false" xmi.id="28085760"/>
+                        <UML:TaggedValue tag="src_isNavigable" value="true" xmi.id="28085720"/>
+                        <UML:TaggedValue tag="src_containment" value="Unspecified" xmi.id="28085680"/>
+                        <UML:TaggedValue tag="dst_visibility" value="Public" xmi.id="28085640"/>
+                        <UML:TaggedValue tag="dst_name" value="home" xmi.id="28085600"/>
+                        <UML:TaggedValue tag="dst_aggregation" value="0" xmi.id="28085560"/>
+                        <UML:TaggedValue tag="dst_isOrdered" value="false" xmi.id="28085510"/>
+                        <UML:TaggedValue tag="dst_isNavigable" value="true" xmi.id="28085470"/>
+                        <UML:TaggedValue tag="dst_containment" value="Unspecified" xmi.id="28085430"/>
+                        <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28085390"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationRole>
+                    <UML:ClassifierRole visibility="public" name="GreenRoom" presentation="28082710" base="EAID_28319290" xmi.id="28229840">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28082590"/>
+                        <UML:TaggedValue tag="ea_stype" value="Object" xmi.id="28082550"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28082510"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28082470"/>
+                        <UML:TaggedValue tag="classifier" value="EAID_14DB5E54_CD7B_4c84_998C_44960049D7E0" xmi.id="28082420"/>
+                        <UML:TaggedValue tag="package" value="EAPK_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28082380"/>
+                        <UML:TaggedValue tag="classname" value="Room" xmi.id="28082340"/>
+                        <UML:TaggedValue tag="date_created" value="2006-07-20 18:35:32" xmi.id="28082300"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-07-21 19:34:11" xmi.id="28082260"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28082210"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28082170"/>
+                        <UML:TaggedValue tag="package_name" value="HouseExampleModel" xmi.id="28082130"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28082090"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28082050"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28082010"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28081970"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                    <UML:ClassifierRole visibility="public" name="YellowRoom" presentation="28079150" base="EAID_28319290" xmi.id="28228320">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28079040"/>
+                        <UML:TaggedValue tag="ea_stype" value="Object" xmi.id="28079000"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28078960"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28078920"/>
+                        <UML:TaggedValue tag="classifier" value="EAID_14DB5E54_CD7B_4c84_998C_44960049D7E0" xmi.id="28078880"/>
+                        <UML:TaggedValue tag="package" value="EAPK_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28078840"/>
+                        <UML:TaggedValue tag="classname" value="Room" xmi.id="28078800"/>
+                        <UML:TaggedValue tag="date_created" value="2006-07-21 19:22:58" xmi.id="28078760"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-07-21 19:34:27" xmi.id="28078720"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28078680"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28078640"/>
+                        <UML:TaggedValue tag="package_name" value="HouseExampleModel" xmi.id="28078600"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28078560"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28078520"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28078480"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28078440"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                    <UML:ClassifierRole visibility="public" name="HotRoom" presentation="28075610" base="EAID_28319290" xmi.id="28228280">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28075500"/>
+                        <UML:TaggedValue tag="ea_stype" value="Object" xmi.id="28075460"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28075420"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28075380"/>
+                        <UML:TaggedValue tag="classifier" value="EAID_9CE44C59_37E4_4117_8C05_F87C4DC33529" xmi.id="28075340"/>
+                        <UML:TaggedValue tag="package" value="EAPK_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28075300"/>
+                        <UML:TaggedValue tag="classname" value="Kitchen" xmi.id="28075260"/>
+                        <UML:TaggedValue tag="date_created" value="2006-07-21 19:27:21" xmi.id="28075220"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-07-21 19:33:56" xmi.id="28075180"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28075140"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28075100"/>
+                        <UML:TaggedValue tag="package_name" value="HouseExampleModel" xmi.id="28075050"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28075010"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28074970"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28074920"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28074880"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                    <UML:ClassifierRole visibility="public" name="Someone" presentation="28072040" base="EAID_28319290" xmi.id="28228240">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28071930"/>
+                        <UML:TaggedValue tag="ea_stype" value="Object" xmi.id="28071890"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28071850"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28071810"/>
+                        <UML:TaggedValue tag="classifier" value="EAID_2F1D9CC6_F38F_4a34_B3C4_B92915108384" xmi.id="28071770"/>
+                        <UML:TaggedValue tag="package" value="EAPK_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28071730"/>
+                        <UML:TaggedValue tag="classname" value="Person" xmi.id="28071690"/>
+                        <UML:TaggedValue tag="date_created" value="2006-07-21 19:29:45" xmi.id="28071650"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-07-21 19:35:00" xmi.id="28071610"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28071570"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28071530"/>
+                        <UML:TaggedValue tag="package_name" value="HouseExampleModel" xmi.id="28071490"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28071450"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28071400"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28071350"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28071310"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                    <UML:ClassifierRole visibility="public" name="WetRoom" presentation="28068480" base="EAID_28319290" xmi.id="28228200">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="isSpecification" value="false" xmi.id="28068370"/>
+                        <UML:TaggedValue tag="ea_stype" value="Object" xmi.id="28068320"/>
+                        <UML:TaggedValue tag="ea_ntype" value="0" xmi.id="28068280"/>
+                        <UML:TaggedValue tag="version" value="1.0" xmi.id="28068240"/>
+                        <UML:TaggedValue tag="classifier" value="EAID_244CC9E5_1F81_4164_9215_C048EC679543" xmi.id="28068200"/>
+                        <UML:TaggedValue tag="package" value="EAPK_06C9C958_C14A_41f4_89A9_6873CCED37A7" xmi.id="28068160"/>
+                        <UML:TaggedValue tag="classname" value="Bathroom" xmi.id="28068110"/>
+                        <UML:TaggedValue tag="date_created" value="2006-07-21 19:31:18" xmi.id="28068070"/>
+                        <UML:TaggedValue tag="date_modified" value="2006-07-21 19:34:02" xmi.id="28068030"/>
+                        <UML:TaggedValue tag="gentype" value="Java" xmi.id="28067990"/>
+                        <UML:TaggedValue tag="tagged" value="0" xmi.id="28067950"/>
+                        <UML:TaggedValue tag="package_name" value="HouseExampleModel" xmi.id="28067910"/>
+                        <UML:TaggedValue tag="phase" value="1.0" xmi.id="28067870"/>
+                        <UML:TaggedValue tag="complexity" value="1" xmi.id="28067830"/>
+                        <UML:TaggedValue tag="status" value="Proposed" xmi.id="28067790"/>
+                        <UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;" xmi.id="28067750"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:ClassifierRole>
+                  </UML:Namespace.ownedElement>
+                </UML:Collaboration>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28225930 28225890" xmi.id="EAID_28298970">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" name="room" aggregation="none" changeable="none" targetScope="instance" type="28229840" isOrdered="false" isNavigable="false" xmi.id="EAID_28226280">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28065440"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" aggregation="composite" changeable="none" targetScope="instance" type="28230060" isOrdered="false" isNavigable="true" xmi.id="EAID_28226240">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28063410"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28225770"/>
+                    <UML:TaggedValue tag="ea_type" value="Aggregation" xmi.id="28225730"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28225690"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28225650"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28225610"/>
+                    <UML:TaggedValue tag="subtype" value="Strong" xmi.id="28225570"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28225530"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28225490"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28225450"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28225090"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28224920"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28222540 28222500" xmi.id="EAID_28298930">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" name="room" aggregation="none" changeable="none" targetScope="instance" type="28228280" isOrdered="false" isNavigable="false" xmi.id="EAID_28222870">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28056910"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" aggregation="composite" changeable="none" targetScope="instance" type="28230060" isOrdered="false" isNavigable="true" xmi.id="EAID_28222830">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28054900"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28222390"/>
+                    <UML:TaggedValue tag="ea_type" value="Aggregation" xmi.id="28222350"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28222310"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28222270"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28222230"/>
+                    <UML:TaggedValue tag="subtype" value="Strong" xmi.id="28222190"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28222150"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28222110"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28222070"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28221720"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28221560"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28219220 28219180" xmi.id="EAID_28298890">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" name="room" aggregation="none" changeable="none" targetScope="instance" type="28228320" isOrdered="false" isNavigable="false" xmi.id="EAID_28219550">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28048540"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" aggregation="composite" changeable="none" targetScope="instance" type="28230060" isOrdered="false" isNavigable="true" xmi.id="EAID_28219510">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28046390"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28219070"/>
+                    <UML:TaggedValue tag="ea_type" value="Aggregation" xmi.id="28219030"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28218990"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28218950"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28218910"/>
+                    <UML:TaggedValue tag="subtype" value="Strong" xmi.id="28218870"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28218830"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28218790"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28218750"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28218410"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28218250"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+                <UML:Association visibility="public" isLeaf="false" isAbstract="false" isRoot="false" presentation="28215810 28215770" xmi.id="EAID_28298850">
+                  <UML:Association.connection >
+                    <UML:AssociationEnd visibility="public" name="room" aggregation="none" changeable="none" targetScope="instance" type="28228200" isOrdered="false" isNavigable="false" xmi.id="EAID_28216160">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28039900"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                    <UML:AssociationEnd visibility="public" aggregation="composite" changeable="none" targetScope="instance" type="28230060" isOrdered="false" isNavigable="true" xmi.id="EAID_28216120">
+                      <UML:ModelElement.taggedValue >
+                        <UML:TaggedValue tag="containment" value="Unspecified" xmi.id="28037730"/>
+                      </UML:ModelElement.taggedValue>
+                    </UML:AssociationEnd>
+                  </UML:Association.connection>
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="style" value="3" xmi.id="28215660"/>
+                    <UML:TaggedValue tag="ea_type" value="Aggregation" xmi.id="28215620"/>
+                    <UML:TaggedValue tag="direction" value=" Destination" xmi.id="28215580"/>
+                    <UML:TaggedValue tag="linemode" value="3" xmi.id="28215540"/>
+                    <UML:TaggedValue tag="seqno" value="0" xmi.id="28215490"/>
+                    <UML:TaggedValue tag="subtype" value="Strong" xmi.id="28215450"/>
+                    <UML:TaggedValue tag="headStyle" value="0" xmi.id="28215410"/>
+                    <UML:TaggedValue tag="lineStyle" value="0" xmi.id="28215360"/>
+                    <UML:TaggedValue tag="privatedata5" value="SX=36;SY=-9;EX=45;EY=-9;" xmi.id="28215320"/>
+                    <UML:TaggedValue tag="virtualInheritance" value="0" xmi.id="28215280"/>
+                    <UML:TaggedValue tag="ea_type" value="Association" xmi.id="28214930"/>
+                    <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="28214760"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Association>
+              </UML:Namespace.ownedElement>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="created" value="2006-07-20 00:00:00" xmi.id="28299610"/>
+                <UML:TaggedValue tag="modified" value="2006-07-20 00:00:00" xmi.id="28299570"/>
+                <UML:TaggedValue tag="iscontrolled" value="FALSE" xmi.id="28299530"/>
+                <UML:TaggedValue tag="isprotected" value="FALSE" xmi.id="28299490"/>
+                <UML:TaggedValue tag="usedtd" value="FALSE" xmi.id="28299450"/>
+                <UML:TaggedValue tag="logxml" value="FALSE" xmi.id="28299410"/>
+                <UML:TaggedValue tag="ea_package_id" value="46" xmi.id="28299370"/>
+                <UML:TaggedValue tag="phase" value="1.0" xmi.id="28299330"/>
+                <UML:TaggedValue tag="status" value="Proposed" xmi.id="28299290"/>
+                <UML:TaggedValue tag="complexity" value="1" xmi.id="28299250"/>
+                <UML:TaggedValue tag="ea_stype" value="Public" xmi.id="28299210"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Package>
+          </UML:Namespace.ownedElement>
+          <UML:ModelElement.taggedValue >
+            <UML:TaggedValue tag="ea_package_id" value="1" xmi.id="28324040"/>
+            <UML:TaggedValue tag="iscontrolled" value="FALSE" xmi.id="28323980"/>
+            <UML:TaggedValue tag="isprotected" value="FALSE" xmi.id="28323630"/>
+            <UML:TaggedValue tag="usedtd" value="FALSE" xmi.id="28323590"/>
+            <UML:TaggedValue tag="logxml" value="FALSE" xmi.id="28323550"/>
+          </UML:ModelElement.taggedValue>
+        </UML:Package>
+        <UML:DataType visibility="private" name="String" isLeaf="false" isAbstract="false" isRoot="false" xmi.id="28319110"/>
+        <UML:DataType visibility="private" name="void" isLeaf="false" isAbstract="false" isRoot="false" xmi.id="28317530"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>

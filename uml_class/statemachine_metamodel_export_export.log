@@ -1,0 +1,19 @@
+Exporting package to 'C:\workspace.flexgen\codegeneration09\examples\uml_class\statemachine_metamodel_export.xml'
+Retrieving data for export: diagram elements
+Retrieving data for export: links
+Retrieving data for export: constraints
+Retrieving data for export: attribute tagged values
+Retrieving data for export: operation tagged values
+Retrieving data for export: operation parameter tagged values
+Retrieving data for export: connector tagged values
+Completed data retrieval
+Pre-processing export tree...
+Completed pre-processing
+Processing package: StatemachineMetamodel
+Element:0: CompositeState
+Element:1: Transition
+Element:2: State
+Element:3: Statemachine
+Element:4: Trigger
+Formatting output XML...please wait
+XMI Document Export Complete!

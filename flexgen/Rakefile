@@ -1,0 +1,65 @@
+require 'rubygems'
+gem 'hoe', '>= 2.1.0'
+require 'hoe'
+require 'fileutils'
+require 'rake/gempackagetask'
+require 'rake/rdoctask'
+
+Hoe.plugin :newgem
+# Hoe.plugin :website
+# Hoe.plugin :cucumberfeatures
+
+# Generate all the Rake tasks
+# Run 'rake -T' to see list of generated tasks (from gem root directory)
+$hoe = Hoe.spec 'flexgen' do
+  self.developer 'Shaun Hannah', 'hooptie45 at gmail dot com'
+  self.post_install_message = 'PostInstall.txt' # TODO remove if post-install message not required
+  self.rubyforge_name       = self.name # TODO this is default value
+  # self.extra_deps         = [['activesupport','>= 2.0.2']]
+  self.version = "0.0.1"
+end
+
+require 'newgem/tasks'
+Dir['tasks/**/*.rake'].each { |t| load t }
+
+
+FlexGenGemSpec = Gem::Specification.new do |s|
+  s.name = %q{flexgen}
+  s.version = "0.0.1"
+  s.date = %q{2010-04-24}
+  s.summary = %q{Flex Modelling and Generator Framework}
+  s.email = %q{hooptie45 at gmail dot com}
+  s.homepage = %q{}
+  s.rubyforge_project = %q{flexgen}
+  s.description = %q{FlexGen is a framework supporting Model Driven Software Development (MDSD). This means that it helps you build Metamodels, instantiate Models, modify and transform Models and finally generate arbitrary textual content from it.}
+  s.has_rdoc = true
+  s.authors = ["Martin Thiede"]
+  gemfiles = Rake::FileList.new
+  gemfiles.include("{lib,test,redist}/**/*")
+
+  gemfiles.exclude(/\b\.bak\b/)
+  s.files = gemfiles
+  s.rdoc_options = ["--main", "README", "-x", "redist", "-x", "test", "-x", "metamodels", "-x", "ea_support/uml13*"]
+  s.extra_rdoc_files = []
+end
+
+
+
+FlexGenPackageTask = Rake::GemPackageTask.new(FlexGenGemSpec) do |p|
+  p.need_zip = true
+end	
+# 
+# task :publish_doc do
+#   sh %{pscp -r doc/* thiedem@rubyforge.org:/var/www/gforge-projects/flexgen}
+# end
+# 
+# task :prepare_package_rdoc => :rdoc do
+#   FlexGenPackageTask.package_files.include("doc/**/*")
+# end
+
+task :release => [:prepare_package_rdoc, :package]
+
+task :clobber => [:clobber_rdoc, :clobber_package]
+# TODO - want other tests/tasks run by default? Add them to the list
+# remove_task :default
+# task :default => [:spec, :features]

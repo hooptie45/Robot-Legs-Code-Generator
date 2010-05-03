@@ -1,0 +1,22 @@
+
+Gather external references for later resolution
+Deleting existing packages from model
+Importing Model from XMI
+Root Package: StatemachineMetamodel
+Add Classifier: CompositeState
+Add Classifier: Trigger
+Add Classifier: Statemachine
+Add Classifier: Transition
+Add Classifier: State
+Resolving Classifiers
+Resolving Owners
+Resolve Package Links
+Add Extensions
+Add Diagrams
+Resolving DiagramIDs
+Resolving Association Classes
+Resolving Parameter Types
+Resolving Attribute Types
+Resolving Note links
+Fixup external references
+Import Complete!

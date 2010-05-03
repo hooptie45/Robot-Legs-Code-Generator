@@ -1,0 +1,139 @@
+<XMI timestamp="Thu Jun 18 10:18:36 +0200 2009" xmlns:UML="omg.org/UML1.3" xmi.version="1.1">
+  <XMI.header >
+    <XMI.documentation >
+      <XMI.exporter >Enterprise Architect</XMI.exporter>
+      <XMI.exporterVersion >2.5</XMI.exporterVersion>
+    </XMI.documentation>
+  </XMI.header>
+  <XMI.content >
+    <UML:Model visibility="public" name="Model" xmi.id="EAPK_24329350">
+      <UML:Namespace.ownedElement >
+        <UML:Package visibility="public" name="StatemachineMetamodel" xmi.id="EAPK_27357910">
+          <UML:Namespace.ownedElement >
+            <UML:Class visibility="public" name="CompositeState" xmi.id="EAID_24316990">
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="27583160"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Class>
+            <UML:Class visibility="public" name="Trigger" xmi.id="EAID_27007650">
+              <UML:Classifier.feature >
+                <UML:Attribute visibility="public" name="name" targetScope="instance" changeability="changeable" ownerScope="instance" xmi.id="27579570">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="type" value="string" xmi.id="27528470"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="27577740"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Class>
+            <UML:Class visibility="public" name="Transition" xmi.id="EAID_24317030">
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="27568530"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Class>
+            <UML:Class visibility="public" name="Statemachine" xmi.id="EAID_24323480">
+              <UML:Classifier.feature >
+                <UML:Attribute visibility="public" name="name" targetScope="instance" changeability="changeable" ownerScope="instance" xmi.id="27563800">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="type" value="string" xmi.id="27506510"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="27563200"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Class>
+            <UML:Class visibility="public" name="State" xmi.id="EAID_24317080">
+              <UML:Classifier.feature >
+                <UML:Attribute visibility="public" name="name" targetScope="instance" changeability="changeable" ownerScope="instance" xmi.id="27560750">
+                  <UML:ModelElement.taggedValue >
+                    <UML:TaggedValue tag="type" value="string" xmi.id="27491140"/>
+                  </UML:ModelElement.taggedValue>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_stype" value="Class" xmi.id="27560140"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Class>
+            <UML:Generalization visibility="public" subtype="EAID_24316990" supertype="EAID_24317080" xmi.id="EAID_24316950">
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Generalization" xmi.id="27557940"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Generalization>
+            <UML:Association visibility="public" xmi.id="EAID_24306600">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" name="subState" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317080" isOrdered="false" isNavigable="true" xmi.id="EAID_24262120"/>
+                <UML:AssociationEnd visibility="public" name="compositeState" multiplicity="0..1" aggregation="composite" changeable="none" targetScope="instance" type="EAID_24316990" isOrdered="false" isNavigable="true" xmi.id="EAID_24249110"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27555530"/>
+                <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="27555320"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+            <UML:Association visibility="public" xmi.id="EAID_27002480">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" name="statemachine" multiplicity="0..1" aggregation="composite" changeable="none" targetScope="instance" type="EAID_24323480" isOrdered="false" isNavigable="true" xmi.id="EAID_26993860"/>
+                <UML:AssociationEnd visibility="public" name="trigger" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_27007650" isOrdered="false" isNavigable="true" xmi.id="EAID_26987700"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27552670"/>
+                <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="27552490"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+            <UML:Association visibility="public" xmi.id="EAID_24306430">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" name="target" multiplicity="0..1" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317080" isOrdered="false" isNavigable="true" xmi.id="EAID_24261680"/>
+                <UML:AssociationEnd visibility="public" name="inTrans" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317030" isOrdered="false" isNavigable="true" xmi.id="EAID_24254740"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27549660"/>
+                <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="27549450"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+            <UML:Association visibility="public" xmi.id="EAID_24306470">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" name="source" multiplicity="0..1" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317080" isOrdered="false" isNavigable="true" xmi.id="EAID_24261890"/>
+                <UML:AssociationEnd visibility="public" name="outTrans" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317030" isOrdered="false" isNavigable="true" xmi.id="EAID_24254810"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27546790"/>
+                <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="27546590"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+            <UML:Association visibility="public" xmi.id="EAID_24315550">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" name="statemachine" multiplicity="0..1" aggregation="composite" changeable="none" targetScope="instance" type="EAID_24323480" isOrdered="false" isNavigable="true" xmi.id="EAID_24291080"/>
+                <UML:AssociationEnd visibility="public" name="transition" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317030" isOrdered="false" isNavigable="true" xmi.id="EAID_24254860"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27543930"/>
+                <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="27543730"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+            <UML:Association visibility="public" xmi.id="EAID_27002270">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317030" isOrdered="false" isNavigable="false" xmi.id="EAID_26981670"/>
+                <UML:AssociationEnd visibility="public" name="trigger" multiplicity="0..1" aggregation="none" changeable="none" targetScope="instance" type="EAID_27007650" isOrdered="false" isNavigable="true" xmi.id="EAID_26987660"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27541100"/>
+                <UML:TaggedValue tag="direction" value="Source -&gt; Destination" xmi.id="27540910"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+            <UML:Association visibility="public" xmi.id="EAID_24316760">
+              <UML:Association.connection >
+                <UML:AssociationEnd visibility="public" name="state" multiplicity="0..*" aggregation="none" changeable="none" targetScope="instance" type="EAID_24317080" isOrdered="false" isNavigable="true" xmi.id="EAID_24262250"/>
+                <UML:AssociationEnd visibility="public" name="statemachine" multiplicity="0..1" aggregation="composite" changeable="none" targetScope="instance" type="EAID_24323480" isOrdered="false" isNavigable="true" xmi.id="EAID_24292990"/>
+              </UML:Association.connection>
+              <UML:ModelElement.taggedValue >
+                <UML:TaggedValue tag="ea_type" value="Association" xmi.id="27538040"/>
+                <UML:TaggedValue tag="direction" value="Bi-Directional" xmi.id="27537850"/>
+              </UML:ModelElement.taggedValue>
+            </UML:Association>
+          </UML:Namespace.ownedElement>
+        </UML:Package>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>
